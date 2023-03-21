@@ -6,9 +6,13 @@
     /* grid-template-rows:50px repeat(3, 100px); */ /* 하나의 크기만 50px, 나머지 3개는 100px로 만들 때 */
     /*grid-template-rows:repeat(2, 100px) repeat(2, 50px); */
     /* grid-template-rows: repeat(4,minmax(150px,300px)); */
+    /* grid-template-rows:[트랙명] 트랙값 [트랙명] 트랙값;*/
+    /* grid-template-rows: [header] 50px [nav] 100px [main] 150px [footer] 200px; */
+    grid-template-columns:repeat(2,100px) 50px;
+    grid-template-rows:repeat(2,50px) repeat(2,200px);
 }
 .container .item {
-    width:100px; /* height:100px; */
+    /* width:100px; */ /* height:100px; */
 }
 .container .item:nth-child(1) {background: pink;}
 .container .item:nth-child(2) {background: yellow;}
