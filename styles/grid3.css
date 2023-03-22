@@ -1,16 +1,16 @@
 .container {
-    width: 1200px;
-    margin: 30px auto;
+    width: max-content;
+    margin: 50px auto;
     background: aqua;
     display: grid;
+    align-items: center;
     grid-template-areas:
-        'big big big s1 s2'
-        'big big big s3 s4'
-        'big big big s5 s6';
-    grid-template-columns: repeat(3,1fr) repeat(2, 1fr);
-    grid-template-rows: repeat(1,1fr) repeat(1, 1fr);
+        'big s1 s2'
+        'big s3 s4'
+        'big s5 s6';
+    grid-template-columns: 3fr repeat(2, 1fr);
 }
-.container .big {grid-area: big; padding: 30px 15px;}
+.container .big {grid-area: big; margin-right: 20px;}
 .container .big img {width:100%;}
 .container .big img span {}
 .container .small {padding:5px;}
